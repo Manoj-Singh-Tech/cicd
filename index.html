@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>We Did It Banner</title>
+
+<style>
+body {
+    margin: 0;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container */
+.banner {
+    width: 900px;
+    height: 500px;
+    background: white;
+    position: relative;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Heading */
+h1 {
+    font-size: 70px;
+    margin-top: 40px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+/* YouTube logo */
+.youtube-logo {
+    width: 180px;
+    height: 110px;
+    background: red;
+    border-radius: 20px;
+    margin: 30px auto;
+    position: relative;
+}
+
+/* play button */
+.youtube-logo::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-left: 35px solid white;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+/* channel name */
+.channel {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+}
+
+.channel span {
+    color: red;
+}
+
+/* confetti */
+.dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: red;
+    top: 50px;
+    left: 100px;
+    border-radius: 2px;
+}
+
+.dot2 { top: 120px; left: 700px; background: black; }
+.dot3 { top: 300px; left: 150px; background: red; }
+.dot4 { top: 400px; left: 750px; background: black; }
+
+</style>
+</head>
+
+<body>
+
+<div class="banner">
+
+    <h1>WE DID IT</h1>
+
+    <div class="youtube-logo"></div>
+
+    <div class="channel">
+        CHANNEL: <span>DEVOOPS</span>
+    </div>
+
+    <div class="dot"></div>
+    <div class="dot dot2"></div>
+    <div class="dot dot3"></div>
+    <div class="dot dot4"></div>
+
+</div>
+
+</body>
+</html>
